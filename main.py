@@ -1,6 +1,11 @@
 import json
 import os
-codename = input("Codename: ")
+try:
+    ok.mkdir("input/")
+    ok.mkdir("output/")
+    codename = input("Codename: ")
+except:
+    codename = input("Codename: ")
 input_json = "input/" + codename + ".json"
 moves0_json = "input/" + codename + "_moves0.json"
 moves1_json = "input/" + codename + "_moves1.json"
