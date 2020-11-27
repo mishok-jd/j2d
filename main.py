@@ -72,7 +72,10 @@ while i < len(input_data['lyrics'][1:-1]):
     ktape_clip_time = input_data['lyrics'][i]['time']
     ktape_duration_time = input_data['lyrics'][i]['duration']
     ktape_text_time = input_data['lyrics'][i]['text']
-    ktape_isLineEnding_time = input_data['lyrics'][i]['isLineEnding']
+    try:
+        ktape_isLineEnding_time = input_data['lyrics'][i]['isLineEnding']
+    except KeyError:
+        ktape_isLineEnding_time = 0
     ktape_clip_time_ready = int(ktape_clip_time / division)
     ktape_duration_time_ready = int(ktape_duration_time / division)
     ktape_clip_ready = '{"__class":"KaraokeClip","Id":' + str(i + 9206) + ',"TrackId":' + str(i + 4825) + ',"IsActive":1,"StartTime":' + str(ktape_clip_time_ready) + ',"Duration":' + str(ktape_duration_time_ready) + ',"Pitch":8.661958,"Lyrics":"' + ktape_text_time + '","IsEndOfLine":' + str(ktape_isLineEnding_time) + ',"ContentType":0,"StartTimeTolerance":4,"EndTimeTolerance":4,"SemitoneTolerance":5}'
