@@ -6,3 +6,8 @@ This is easy-to-use tool for converting Just Dance Now (JDVS or custom in JDNOW 
 
 # How to use?
 For using tool need Python latest version (https://www.python.org/). If you don't have Python, then install just Python on your computer (please make "ADD TO PATH" in Python Installer). Move main JSON and moves to input folder (if you porting map from JDVS, then you need copy Codename_SongPreviewBeats.json). Open main.py and enter codename.
+
+# Contacts
+Discord: mishok#5983
+VK: @zanga57
+Youtube: https://youtube.com/c/Rusfong
