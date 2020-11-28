@@ -9,5 +9,7 @@ For using tool need Python latest version (https://www.python.org/). If you don'
 
 # Contacts
 Discord: mishok#5983
+
 VK: @zanga57
+
 Youtube: https://youtube.com/c/Rusfong
