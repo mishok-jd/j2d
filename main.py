@@ -79,7 +79,7 @@ while i < len(input_data['lyrics'][1:-1]):
         ktape_isLineEnding_time = 0
     ktape_clip_time_ready = int(ktape_clip_time / division)
     ktape_duration_time_ready = int(ktape_duration_time / division)
-    ktape_clip_ready = '{"__class":"KaraokeClip","Id":' + str(i + 9206) + ',"TrackId":' + str(i + 4825) + ',"IsActive":1,"StartTime":' + str(ktape_clip_time_ready) + ',"Duration":' + str(ktape_duration_time_ready) + ',"Pitch":8.661958,"Lyrics":"' + ktape_text_time + '","IsEndOfLine":' + str(ktape_isLineEnding_time) + ',"ContentType":0,"StartTimeTolerance":4,"EndTimeTolerance":4,"SemitoneTolerance":5}'
+    ktape_clip_ready = '{"__class":"KaraokeClip","Id":' + str(i * 11002332) + ',"TrackId":' + str(11002332) + ',"IsActive":1,"StartTime":' + str(ktape_clip_time_ready) + ',"Duration":' + str(ktape_duration_time_ready) + ',"Pitch":8.661958,"Lyrics":"' + ktape_text_time + '","IsEndOfLine":' + str(ktape_isLineEnding_time) + ',"ContentType":0,"StartTimeTolerance":4,"EndTimeTolerance":4,"SemitoneTolerance":5}'
     ktape_clips += ktape_clip_ready + ","
     i += 1
 ktape_clips = ktape_clips + "]"
@@ -102,7 +102,7 @@ while i < len(moves0_data[1:-1]):
     dtape_motionclip_time_ready = int(dtape_motionclip_time / division)
     dtape_motionclip_duration_ready = int(dtape_motionclip_duration / division)
     dtape_motionclip_classifierpath_ready = 'world/maps/' + codename.lower() + '/timeline/moves/' + dtape_motionclip_name + '.msm'
-    dtape_motionclip_ready = '{"__class":"MotionClip","Id":' + str(i + 5312) + ',"TrackId":' + str(i + 4734) + ',"IsActive":1,"StartTime":' + str(dtape_motionclip_time_ready) + ',"Duration":' + str(dtape_motionclip_duration_ready) + ',"ClassifierPath":"' + dtape_motionclip_classifierpath_ready + '","GoldMove":' + str(dtape_motionclip_goldmove) + ',"CoachId":0,"MoveType":0,"Color":[1,0.988235,0.670588,0.870588],"MotionPlatformSpecifics":{"X360": {"__class": "MotionPlatformSpecific","ScoreScale": 1,"ScoreSmoothing": 0,"ScoringMode": 0},"ORBIS": {"__class":"MotionPlatformSpecific","ScoreScale":1,"ScoreSmoothing":0,"ScoringMode":0},"DURANGO":{"__class":"MotionPlatformSpecific","ScoreScale":1,"ScoreSmoothing":0,"ScoringMode":0}}}'
+    dtape_motionclip_ready = '{"__class":"MotionClip","Id":' + str(i * 11002332) + ',"TrackId":' + str(11002332) + ',"IsActive":1,"StartTime":' + str(dtape_motionclip_time_ready) + ',"Duration":' + str(dtape_motionclip_duration_ready) + ',"ClassifierPath":"' + dtape_motionclip_classifierpath_ready + '","GoldMove":' + str(dtape_motionclip_goldmove) + ',"CoachId":0,"MoveType":0,"Color":[1,0.988235,0.670588,0.870588],"MotionPlatformSpecifics":{"X360": {"__class": "MotionPlatformSpecific","ScoreScale": 1,"ScoreSmoothing": 0,"ScoringMode": 0},"ORBIS": {"__class":"MotionPlatformSpecific","ScoreScale":1,"ScoreSmoothing":0,"ScoringMode":0},"DURANGO":{"__class":"MotionPlatformSpecific","ScoreScale":1,"ScoreSmoothing":0,"ScoringMode":0}}}'
     dtape_clips += dtape_motionclip_ready + ","
     i += 1
 i = 0
@@ -120,7 +120,7 @@ else:
         dtape_motionclip_time_ready = int(dtape_motionclip_time / division)
         dtape_motionclip_duration_ready = int(dtape_motionclip_duration / division)
         dtape_motionclip_classifierpath_ready = 'world/maps/' + codename.lower() + '/timeline/moves/' + dtape_motionclip_name + '.msm'
-        dtape_motionclip_ready = '{"__class":"MotionClip","Id":' + str(i + 2412) + ',"TrackId":' + str(i + 6312) + ',"IsActive":1,"StartTime":' + str(dtape_motionclip_time_ready) + ',"Duration":' + str(dtape_motionclip_time_ready) + ',"ClassifierPath":"' + dtape_motionclip_classifierpath_ready + '","GoldMove":' + str(dtape_motionclip_goldmove) + ',"CoachId":1,"MoveType":0,"Color":[1,0.988235,0.670588,0.870588],"MotionPlatformSpecifics":{"X360": {"__class": "MotionPlatformSpecific","ScoreScale": 1,"ScoreSmoothing": 0,"ScoringMode": 0},"ORBIS": {"__class":"MotionPlatformSpecific","ScoreScale":1,"ScoreSmoothing":0,"ScoringMode":0},"DURANGO":{"__class":"MotionPlatformSpecific","ScoreScale":1,"ScoreSmoothing":0,"ScoringMode":0}}}'
+        dtape_motionclip_ready = '{"__class":"MotionClip","Id":' + str(i * 11002332) + ',"TrackId":' + str(11002332) + ',"IsActive":1,"StartTime":' + str(dtape_motionclip_time_ready) + ',"Duration":' + str(dtape_motionclip_time_ready) + ',"ClassifierPath":"' + dtape_motionclip_classifierpath_ready + '","GoldMove":' + str(dtape_motionclip_goldmove) + ',"CoachId":1,"MoveType":0,"Color":[1,0.988235,0.670588,0.870588],"MotionPlatformSpecifics":{"X360": {"__class": "MotionPlatformSpecific","ScoreScale": 1,"ScoreSmoothing": 0,"ScoringMode": 0},"ORBIS": {"__class":"MotionPlatformSpecific","ScoreScale":1,"ScoreSmoothing":0,"ScoringMode":0},"DURANGO":{"__class":"MotionPlatformSpecific","ScoreScale":1,"ScoreSmoothing":0,"ScoringMode":0}}}'
         dtape_clips += dtape_motionclip_ready + ","
         i += 1
 if moves2_data == "[]":
@@ -137,7 +137,7 @@ else:
         dtape_motionclip_time_ready = int(dtape_motionclip_time / division)
         dtape_motionclip_duration_ready = int(dtape_motionclip_duration / division)
         dtape_motionclip_classifierpath_ready = 'world/maps/' + codename.lower() + '/timeline/moves/' + dtape_motionclip_name + '.msm'
-        dtape_motionclip_ready = '{"__class":"MotionClip","Id":' + str(i + 12052) + ',"TrackId":' + str(i + 3421) + ',"IsActive":1,"StartTime":' + str(dtape_motionclip_time_ready) + ',"Duration":' + str(dtape_motionclip_duration_ready) + ',"ClassifierPath":"' + dtape_motionclip_classifierpath_ready + '","GoldMove":' + str(dtape_motionclip_goldmove) + ',"CoachId":2,"MoveType":0,"Color":[1,0.988235,0.670588,0.870588],"MotionPlatformSpecifics":{"X360": {"__class": "MotionPlatformSpecific","ScoreScale": 1,"ScoreSmoothing": 0,"ScoringMode": 0},"ORBIS": {"__class":"MotionPlatformSpecific","ScoreScale":1,"ScoreSmoothing":0,"ScoringMode":0},"DURANGO":{"__class":"MotionPlatformSpecific","ScoreScale":1,"ScoreSmoothing":0,"ScoringMode":0}}}'
+        dtape_motionclip_ready = '{"__class":"MotionClip","Id":' + str(i * 11002332) + ',"TrackId":' + str(11002332) + ',"IsActive":1,"StartTime":' + str(dtape_motionclip_time_ready) + ',"Duration":' + str(dtape_motionclip_duration_ready) + ',"ClassifierPath":"' + dtape_motionclip_classifierpath_ready + '","GoldMove":' + str(dtape_motionclip_goldmove) + ',"CoachId":2,"MoveType":0,"Color":[1,0.988235,0.670588,0.870588],"MotionPlatformSpecifics":{"X360": {"__class": "MotionPlatformSpecific","ScoreScale": 1,"ScoreSmoothing": 0,"ScoringMode": 0},"ORBIS": {"__class":"MotionPlatformSpecific","ScoreScale":1,"ScoreSmoothing":0,"ScoringMode":0},"DURANGO":{"__class":"MotionPlatformSpecific","ScoreScale":1,"ScoreSmoothing":0,"ScoringMode":0}}}'
         dtape_clips += dtape_motionclip_ready + ","
         i += 1
 if moves3_data == "[]":
@@ -154,7 +154,7 @@ else:
         dtape_motionclip_time_ready = int(dtape_motionclip_time / division)
         dtape_motionclip_duration_ready = int(dtape_motionclip_duration / division)
         dtape_motionclip_classifierpath_ready = 'world/maps/' + codename.lower() + '/timeline/moves/' + dtape_motionclip_name + '.msm'
-        dtape_motionclip_ready = '{"__class":"MotionClip","Id":' + str(i + 1321) + ',"TrackId":' + str(i + 3124) + ',"IsActive":1,"StartTime":' + str(dtape_motionclip_time_ready) + ',"Duration":' + str(dtape_motionclip_duration_ready) + ',"ClassifierPath":"' + dtape_motionclip_classifierpath_ready + '","GoldMove":' + str(dtape_motionclip_goldmove) + ',"CoachId":3,"MoveType":0,"Color":[1,0.988235,0.670588,0.870588],"MotionPlatformSpecifics":{"X360": {"__class": "MotionPlatformSpecific","ScoreScale": 1,"ScoreSmoothing": 0,"ScoringMode": 0},"ORBIS": {"__class":"MotionPlatformSpecific","ScoreScale":1,"ScoreSmoothing":0,"ScoringMode":0},"DURANGO":{"__class":"MotionPlatformSpecific","ScoreScale":1,"ScoreSmoothing":0,"ScoringMode":0}}}'
+        dtape_motionclip_ready = '{"__class":"MotionClip","Id":' + str(i * 11002332) + ',"TrackId":' + str(11002332) + ',"IsActive":1,"StartTime":' + str(dtape_motionclip_time_ready) + ',"Duration":' + str(dtape_motionclip_duration_ready) + ',"ClassifierPath":"' + dtape_motionclip_classifierpath_ready + '","GoldMove":' + str(dtape_motionclip_goldmove) + ',"CoachId":3,"MoveType":0,"Color":[1,0.988235,0.670588,0.870588],"MotionPlatformSpecifics":{"X360": {"__class": "MotionPlatformSpecific","ScoreScale": 1,"ScoreSmoothing": 0,"ScoringMode": 0},"ORBIS": {"__class":"MotionPlatformSpecific","ScoreScale":1,"ScoreSmoothing":0,"ScoringMode":0},"DURANGO":{"__class":"MotionPlatformSpecific","ScoreScale":1,"ScoreSmoothing":0,"ScoringMode":0}}}'
         dtape_clips += dtape_motionclip_ready + ","
         i += 1
 i = 0
@@ -165,7 +165,7 @@ while i < len(input_data['pictos'][1:-1]):
     dtape_pictogramclip_time_ready = int(dtape_pictogramclip_time / division)
     dtape_pictogramclip_duration_ready = int(dtape_pictogramclip_duration / division)
     dtape_pictogramclip_pictopath_ready = 'world/maps/' + codename.lower() + '/timeline/pictos/' + dtape_pictogramclip_name + '.png'
-    dtape_pictogramclip_ready = '{"__class":"PictogramClip","Id":' + str(i + 23123) + ',"TrackId":' + str(i + 12332) + ',"IsActive":1,"StartTime":' + str(dtape_pictogramclip_time_ready) + ',"Duration":' + str(dtape_pictogramclip_duration_ready) + ',"PictoPath":"' + dtape_pictogramclip_pictopath_ready + '","MontagePath":"","AtlIndex":4294967295,"CoachCount":4294967295}'
+    dtape_pictogramclip_ready = '{"__class":"PictogramClip","Id":' + str(i * 11002332) + ',"TrackId":' + str(11002332) + ',"IsActive":1,"StartTime":' + str(dtape_pictogramclip_time_ready) + ',"Duration":' + str(dtape_pictogramclip_duration_ready) + ',"PictoPath":"' + dtape_pictogramclip_pictopath_ready + '","MontagePath":"","AtlIndex":4294967295,"CoachCount":4294967295}'
     dtape_clips += dtape_pictogramclip_ready + ","
     i += 1
 dtape_clips = dtape_clips + "]"
