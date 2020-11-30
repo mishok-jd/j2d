@@ -82,6 +82,7 @@ while i < len(input_data['lyrics'][1:-1]):
     ktape_clips += ktape_clip_ready + ","
     i += 1
 ktape_clips = ktape_clips + "]"
+ktape_clips = ktape_clips.replace(",]","]")
 ktape = '{"__class":"Tape","Clips":' + str(ktape_clips) + ',"TapeClock":0,"TapeBarCount":1,"FreeResourcesAfterPlay":0,"MapName":"' + codename + '"}'
 with open(ktape_name, "w") as h:
     h.write(ktape)
@@ -168,6 +169,7 @@ while i < len(input_data['pictos'][1:-1]):
     dtape_clips += dtape_pictogramclip_ready + ","
     i += 1
 dtape_clips = dtape_clips + "]"
+dtape_clips = dtape_clips.replace(",]","]")
 dtape = '{"__class":"Tape","Clips":' + dtape_clips + ',"TapeClock":0,"TapeBarCount":1,"FreeResourcesAfterPlay":0,"MapName":"' + codename + '"}'
 with open(dtape_name, "w") as h:
     h.write(dtape)
