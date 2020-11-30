@@ -16,8 +16,7 @@ musictrack_name = "output/" + codename.lower() + "_musictrack.tpl.ckd"
 ktape_name = "output/" + codename.lower() + "_tml_karaoke.ktape.ckd"
 dtape_name = "output/" + codename.lower() + "_tml_dance.dtape.ckd"
 with open(input_json, "r") as a:
-    a_ready = (a.replace((codename + "("), "")).replace("})", "}")
-    input_data = json.load(a_ready)
+    input_data = json.load(a)
     a.close()
 with open(moves0_json, "r") as b:
     moves0_data = json.load(b)
